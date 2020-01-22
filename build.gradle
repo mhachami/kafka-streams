@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.2.1.RELEASE'
+    id 'io.spring.dependency-management'  version '1.0.8.RELEASE'
+}
+
+group 'com.tsb'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-jersey')
+    compile('org.apache.kafka:kafka-streams:2.3.0')
+}
